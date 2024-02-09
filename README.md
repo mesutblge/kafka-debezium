@@ -25,17 +25,6 @@ Konteynerları başlattıktan sonra, aynı dizinde terminali açın ve aşağıd
 ```
 
 
-### 
-
-#### ATILAN İSTEK SONUCUNDA
-
-**201:** İstek başarılı bir şekilde gönderildi.
-
-**400:** İstek gönderilemedi. `debezium.json` dosyasındaki DB configini kontrol edin.
-
-###
-
-Containerlerimizi başarılı bir şekilde ayağa kaldırdık. Kafka UI'ı incelemek için tarayıcınızı açın ve localhost:8090 adresine gidin.
 ### KAFKA UI
 
 Kafka UI'ı incelemek için tarayıcınızı açın ve localhost:8090 adresine gidin.
@@ -44,3 +33,9 @@ Kafka UI'ı incelemek için tarayıcınızı açın ve localhost:8090 adresine g
   http://localhost:8090
 ```
     
+
+  #### ATILAN İSTEK SONUCUNDA
+
+**201:** İstek başarılı bir şekilde gönderildi.
+
+**400:** İstek gönderilemedi. `debezium.json` dosyasındaki DB configini kontrol edin.
