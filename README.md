@@ -39,3 +39,19 @@ Kafka UI'ı incelemek için tarayıcınızı açın ve localhost:8090 adresine g
 **201:** İstek başarılı bir şekilde gönderildi.
 
 **400:** İstek gönderilemedi. `debezium.json` dosyasındaki DB configini kontrol edin.
+
+#### TABLODA DEĞİŞİKLİK YAPILAMAZSA
+
+Terminale `docker ps` yazıp enterlayın. postgres:14-alpine isimli konteynerımızın içine gireceğiz. Bunun için ;
+
+```bash
+  psql -U postgres -d exampledb -W
+```
+
+Komutu çalıştırdıktan sonra password isteyecek. Password `postgres`.
+
+Daha sonra veri tabanında bulunan her tablo için aşağıda bulunan çalıştıracağız.
+
+```bash
+  ALTER TABLE ( table_name ) REPLICA IDENTITY FULL;
+  ```
