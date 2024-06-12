@@ -42,10 +42,19 @@ Kafka UI'ı incelemek için tarayıcınızı açın ve localhost:8090 adresine g
 
 #### TABLODA DEĞİŞİKLİK YAPILAMAZSA
 
+### UBUNTU İÇİN 
+
 Terminale `docker ps` yazıp enterlayın. postgres:14-alpine isimli konteynerımızın içine gireceğiz. Bunun için ;
 
 ```bash
   psql -U postgres -d exampledb -W
+```
+### WİNDOWS İÇİN 
+
+Terminale `docker ps -a ` yazıp enterlayın. postgresin çalıştığı konteyner isminin içine gireceğiz. Bunun için ;
+
+```bash
+  docker exec -it <container_name> bash 
 ```
 
 Komutu çalıştırdıktan sonra password isteyecek. Password `postgres`.
